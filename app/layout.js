@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en" className={interFontFamily.className}>
       <body className="container">
+         <title>Orhanflix</title>
          <Header />
          <main>{children}</main>
          <Footer />
