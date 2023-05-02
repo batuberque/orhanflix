@@ -1,0 +1,19 @@
+import React from "react"
+import { Skeleton } from "@/components/skeleton"
+
+import styles from "./styles.module.css"
+
+//skeleton komponentini boş dizeye atama işlemi (category yükleme)
+function CategoriesLoading() {
+   return (
+     <div className={styles.categories}>
+       {Array(5)
+         .fill(null)
+         .map((_, index) => (
+           <Skeleton key={index} height={72} />
+         ))}
+     </div>
+   )
+ }
+ 
+ export { CategoriesLoading }
