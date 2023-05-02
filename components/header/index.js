@@ -3,7 +3,7 @@ import Link from "next/link"
 import { SiCinema4D } from "react-icons/si"
 
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 function Header() {
   return (
